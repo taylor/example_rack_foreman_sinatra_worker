@@ -1,0 +1,16 @@
+# Foreman, Rack, Unicorn/Thin, sinatra example
+
+Start with ```bundle exec foreman start```
+
+## Ubuntu upstart
+
+```bundle exec foreman export upstart /etc/init```
+
+or with a specific port
+
+```bundle exec foreman export upstart /etc/init -p 8888```
+
+## Unicorn
+
+Configure the number of unicorn processes and the connection timeouts with
+config/unicorn.rb
