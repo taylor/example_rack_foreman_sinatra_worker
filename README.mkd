@@ -1,8 +1,19 @@
 # Foreman, Rack, Unicorn/Thin, sinatra example
 
-Start with ```bundle exec foreman start```
+Foreman can startup up any process (program) specified in the Procfile.
+
+Use Rack to separate your web app from the web server used -- Unicorn, Thin,
+etc.
+
+## Local dev
+
+Start everything with
+
+```bundle exec foreman start```
 
 ## Ubuntu upstart
+
+To create upstart init scripts on ubuntu run
 
 ```bundle exec foreman export upstart /etc/init```
 
